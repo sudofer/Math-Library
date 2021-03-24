@@ -6,4 +6,5 @@ const x = Logic.factorial
 
 console.log(x(4))
 */
-console.log(Logic.power(3,-5))
+//console.log(Logic.power(3,-5))
+console.log(Logic.badFibonacci(1000))
