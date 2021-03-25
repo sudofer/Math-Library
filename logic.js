@@ -36,14 +36,18 @@ const Logic = {
     },
     loopFactorial(n) {
         let counter = 1
-        if (n < 0) {
+        if (n < 0 || !Logic.isInt(n)) {
             return NaN
         }
         for (; n > 1; n--) {
             counter *= n;
         }
         return counter
-    }
+    },
+    isInt(n) {
+        return n % 1 === 0
+    },
+
 }
 
 module.exports = Logic
