@@ -48,11 +48,11 @@ const Logic = {
         return n % 1 === 0
     },
     loopPower(n, e) {
-        let counter = n
-        for (; e > 1; e--) {
-            n *= counter
+        let counter = 1
+        for (; e > 0; e--) {
+            counter *= n
         }
-        return n
+        return counter
     }
 }
 
