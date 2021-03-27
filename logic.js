@@ -47,7 +47,13 @@ const Logic = {
     isInt(n) {
         return n % 1 === 0
     },
-
+    loopPower(n, e) {
+        let counter = n
+        for (; e > 1; e--) {
+            n *= counter
+        }
+        return n
+    }
 }
 
 module.exports = Logic
